@@ -1,3 +1,5 @@
+import { sections } from "../../db.json";
+import Section from "../shared/ui/Section";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -14,7 +16,11 @@ export default function Home() {
 					successful
 				</p>
 			</header>
-			<article></article>
+			<article>
+				{sections.map((section) => (
+					<Section key={section.id} section={section} />
+				))}
+			</article>
 		</main>
 	);
 }
