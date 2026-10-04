@@ -1,6 +1,8 @@
 .main {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	gap: 50px;
 }
 
 .header {
@@ -35,8 +37,10 @@
 .article {
 	display: grid;
 	grid-template-areas:
-		"none team-builder none"
+		". team-builder ."
 		"supervisor team-builder calculator"
 		"supervisor karma calculator"
-		"none karma none";
+		". karma .";
+	width: 160%;
+	gap: 30px;
 }

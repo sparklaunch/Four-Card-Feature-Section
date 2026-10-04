@@ -1,2 +1,9 @@
 .section {
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.stripe {
+	height: 5px;
 }
