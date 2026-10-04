@@ -1,2 +1,22 @@
 .main {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.subheading {
+	color: var(--color-text);
+	font-weight: 300;
+	font-size: 32px;
+}
+
+.heading {
+	color: var(--color-text);
+	font-weight: 600;
+	font-size: 32px;
 }

@@ -12,3 +12,11 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	background-color: var(--color-background);
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
