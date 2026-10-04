@@ -31,3 +31,12 @@
 	font-size: 16px;
 	margin-top: 10px;
 }
+
+.article {
+	display: grid;
+	grid-template-areas:
+		"none team-builder none"
+		"supervisor team-builder calculator"
+		"supervisor karma calculator"
+		"none karma none";
+}

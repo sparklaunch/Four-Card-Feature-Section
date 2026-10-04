@@ -16,7 +16,7 @@ export default function Home() {
 					successful
 				</p>
 			</header>
-			<article>
+			<article className={styles.article}>
 				{sections.map((section) => (
 					<Section key={section.id} section={section} />
 				))}
