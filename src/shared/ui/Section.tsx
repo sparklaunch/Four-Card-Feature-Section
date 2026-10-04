@@ -1,4 +1,5 @@
 import SectionType from "@/src/domain/sections/SectionType";
+import Image from "next/image";
 import styles from "./Section.module.css";
 
 export default function Section({ section }: { section: SectionType }) {
@@ -16,8 +17,16 @@ export default function Section({ section }: { section: SectionType }) {
 					backgroundColor: `var(--color-${color})`
 				}}
 			/>
-			<div>
-				<h3>{title}</h3>
+			<div className={styles.body}>
+				<h3 className={styles.title}>{title}</h3>
+				<p className={styles.content}>{content}</p>
+				<Image
+					src={`/assets/images/${icon}`}
+					alt=""
+					width={50}
+					height={50}
+					className={styles.icon}
+				/>
 			</div>
 		</section>
 	);
